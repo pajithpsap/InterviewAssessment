@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    height: 100vh;
+ }
+ .container {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 100px;
+    
+ }
+ .left {
+    width: 50%;
+ }
+ .resize {
+    background: #444857;
+    height: 100%;
+    width: 5px;
+    cursor: col-resize;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+ }
+ .resize-h{
+    background: hsl(0, 2%, 22%);
+    height: 5px;
+    width: 604px;
+    margin-left: 100px;
+    cursor: row-resize;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 100;
+ }
+ .right {
+    flex-grow: 1;
+ }
+ #c1{
+    border-bottom: none;
+ }
+ #c2{
+    border-top: none;
+ }
+
+ .center {
+   z-index: 200;
+   width: 70px;
+   height: 70px;
+   /* background-color: palevioletred; */
+   position: absolute;
+   left: 0px; /* Initial left position */
+   top: 0; /* Initial top position */
+}
+#item1{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+#item2{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+#item3{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+#item4{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+#cen-ele{
+   width: 70px;
+   height: 70px;
+   background-color: blueviolet;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#item1 div{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 400;
+}
+#item2 div{
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 400;
+}
+#item3 div{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 400;
+}
+#item4 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: 400;
+}
